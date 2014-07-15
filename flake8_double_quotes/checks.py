@@ -1,6 +1,7 @@
 import re
 from flake8_double_quotes import __version__
 
+
 def check_quotes(logical_line):
     """ Raise lint error when using ' instead of " """
     # if there is no double quote sign
@@ -22,5 +23,5 @@ def check_quotes(logical_line):
         yield single_quotes + 1, 'Q000 Remove Single quotes'
 
 
-check_quotes.name = name ='flake8-double-quotes'
+check_quotes.name = name = 'flake8-double-quotes'
 check_quotes.version = __version__

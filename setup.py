@@ -27,7 +27,7 @@ setup(
     ],
     url='http://github.com/yandex-sysmon/flake8-double-quotes/',
     long_description=long_description,
-    description="Flake8 lint to forbide single quotes.",
+    description="Flake8 lint to forbid single quotes.",
     packages=['flake8_double_quotes'],
     include_package_data=True,
     entry_points={
