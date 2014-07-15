@@ -2,7 +2,7 @@ import io
 
 from setuptools import setup
 
-import flake8_quotes
+import flake8_double_quotes
 
 
 def read(*filenames, **kwargs):
@@ -19,20 +19,20 @@ long_description = read('README')
 
 
 setup(
-    name='flake8-quotes',
+    name='flake8-double-quotes',
     author='Zachary Wright Heller',
-    version=flake8_quotes.__version__,
+    version=flake8_double_quotes.__version__,
     install_requires=[
         'setuptools',
     ],
-    url='http://github.com/zheller/flake8-quotes/',
+    url='http://github.com/yandex-sysmon/flake8-double-quotes/',
     long_description=long_description,
-    description="Flake8 lint for double quotes.",
-    packages=['flake8_quotes'],
+    description="Flake8 lint to forbide single quotes.",
+    packages=['flake8_double_quotes'],
     include_package_data=True,
     entry_points={
         'flake8.extension': [
-            'flake8_quotes = flake8_quotes:check_quotes',
+            'flake8_double_quotes = flake8_double_quotes:check_quotes',
         ],
     },
     classifiers=[
